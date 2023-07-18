@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>我的个人网站</title>
+  
+  <!-- 使用更优雅的字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 引入 Vue.js 核心库 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+  <!-- 引入样式文件 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>我的个人网站</h1>
+      <nav>
+        <ul>
+          <li><a @click="scrollToSection('#about')">关于我</a></li>
+          <li><a @click="scrollToSection('#projects')">项目</a></li>
+          <li><a @click="scrollToSection('#contact')">联系方式</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="about">
+        <h2>关于我</h2>
+        <h3>我是FXL(方雄磊)，现在初二，喜欢编程，制作网站。我喜欢让AI编程。</h3>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="project" @click="goToLink('./my.html')">
+          <h3>个人网站</h3>
+          <p>这个网站就是我使用HTML和CSS做的第一个个人网站作品，我会继续添加更多内容，使它变得更完整丰富。</p>
+        </div>
+
+        <div class="project" @click="goToLink('https://www.123pan.com/s/kBWLVv-FdHWd.html')">
+          <h3>资源分享</h3>
+          <p>我想用这个网站做资源分享，暂时不提供密码。</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>联系方式</h2>
+        <ul>
+          <li>QQ: 2980688988</li>
+          <li>企业Email: fxl@fxlqwq.link</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>版权所有 &copy; 方雄磊 | 设计: AI</p>
+    </footer>
+  </div>
+
+  <!-- 引入 Vue.js 应用文件 -->
+  <script src="app.js"></script>
+</body>
+</html>
