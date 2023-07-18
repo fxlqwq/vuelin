@@ -1,0 +1,108 @@
+/* 全局样式 */
+body {
+    font-family: 'Ubuntu', sans-serif; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 头部导航栏 */
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  nav li a:hover {
+    color: #ddd;
+  }
+  
+  /* 内容区 */
+  main {
+    padding: 20px;
+  }
+  
+  /* 关于我 */
+  .about img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+  }
+  
+  .about p {
+    line-height: 1.5;
+    max-width: 600px;
+  }
+  
+  /* 项目 */
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .project {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .project h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .project p {
+    line-height: 1.5;
+  }
+  
+  .project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 联系方式 */
+  .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact li {
+    margin-bottom: 10px;
+  }
+  
+  /* 页脚 */
+  footer {
+    background-color: #344252;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
